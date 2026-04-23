@@ -144,7 +144,7 @@ impl<'a> TerminalView<'a> {
         layout: &Response,
         state: &mut TerminalViewState,
     ) -> Self {
-        if !layout.has_focus() || !layout.contains_pointer() {
+        if !layout.has_focus() {
             return self;
         }
 
